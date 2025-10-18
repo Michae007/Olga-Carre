@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olga Carre | Профессиональный парикмахер-стилист | Стрижки и окрашивание в Смоленске</title>
+    <meta name="description" content="Olga Carre - парикмахер-стилист с 20-летним опытом в Смоленске. Корейские и английские стрижки, окрашивание любой сложности. Запись онлайн.">
+    <meta name="keywords" content="парикмахер Смоленск, стрижки Смоленск, окрашивание волос, корейские стрижки, английские стрижки, парикмахер-стилист, запись к парикмахеру">
+    <meta name="author" content="Olga Carre">
+    <link rel="canonical" href="https://olgacarre.ru">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Olga Carre | Профессиональный парикмахер-стилист в Смоленске">
+    <meta property="og:description" content="Парикмахер с 20-летним опытом. Корейские и английские стрижки, окрашивание любой сложности в Смоленске.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olgacarre.ru">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/1000065628.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💇</text></svg>">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD структурированные данные -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Olga Carre",
+      "description": "Профессиональный парикмахер-стилист с 20-летним опытом",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Николаева, 3",
+        "addressLocality": "Смоленск",
+        "addressCountry": "RU"
+      },
+      "telephone": "+7-950-705-0964",
+      "email": "rasvet360@gmail.com",
+      "openingHours": "Mo-Sa 09:00-18:00, Su 10:00-16:00",
+      "url": "https://olgacarre.ru",
+      "priceRange": "₽₽",
+      "image": "https://raw.githubusercontent.com/Michae007/Olga-Carre/main/1000065628.jpg"
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #d4af37;
+            --secondary-color: #1a1a2e;
+            --accent-color: #e63946;
+            --light-color: #f8f9fa;
+            --dark-color: #16213e;
+            --text-color: #2d3748;
+            --gradient: linear-gradient(135deg, #d4af37 0%, #f7ef8a 100%);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #6b7280;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--gradient);
+            color: var(--secondary-color);
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: var(--secondary-color);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .btn:hover {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            box-shadow: none;
+        }
+
+        .btn-secondary::before {
+            background: var(--primary-color);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .header-scrolled {
+            padding: 10px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            transition: var(--transition);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo-text span {
+            color: var(--primary-color);
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.8) 100%), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 200px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-img {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transform: rotate(-2deg);
+            transition: var(--transition);
+        }
+
+        .about-img:hover {
+            transform: rotate(0deg);
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text h3 {
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        .experience {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            background: var(--light-color);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .experience-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-right: 15px;
+            line-height: 1;
+        }
+
+        .experience-text {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+        }
+
+        .service-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            z-index: 2;
+        }
+
+        .service-img {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-content h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .service-content p {
+            margin-bottom: 15px;
+            color: #6b7280;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Locations Section */
+        .locations {
+            background-color: white;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .location-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, white 100%);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #f1f1f1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .location-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient);
+        }
+
+        .location-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .location-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .location-card h3 {
+            font-size: 1.6rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .location-card p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .location-card p i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: #f8f9fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            height: 280px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 20px;
+            color: white;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+
+        .author-info p {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--dark-color) 100%);
+            color: white;
+        }
+
+        .contact .section-title h2,
+        .contact .section-title p {
+            color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .contact-detail i {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+            width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        .footer-col p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-col ul li a i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Новые элементы */
+        
+        /* Блок преимуществ */
+        .benefits {
+            background-color: white;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 15px;
+            transition: var(--transition);
+            background: var(--light-color);
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+        
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background-color: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background-color: var(--light-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        
+        .faq-question i {
+            transition: var(--transition);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+            background-color: white;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #f7ef8a 100%);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1100px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-img {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-btns .btn {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 15px;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 15px 15px;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .section-title h2 {
+                font-size: 2.3rem;
+            }
+            
+            .about, .services, .locations, .gallery, .testimonials, .contact {
+                padding: 70px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-scissors"></i>
+                </div>
+                <div class="logo-text">Olga <span>Carre</span></div>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#benefits">Преимущества</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Искусство стрижки с 20-летним опытом</h1>
+                <p>Создаю стильные корейские и английские стрижки, выполняю окрашивание любой сложности в Смоленске</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Записаться онлайн</a>
+                    <a href="#gallery" class="btn btn-secondary">Мои работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Обо мне</h2>
+                <p>Профессионал с многолетним опытом в индустрии красоты</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img fade-in">
+                    <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/1000065628.jpg" alt="Olga Carre - профессиональный парикмахер">
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Olga Carre</h3>
+                    <p>Меня зовут Ольга, и я профессиональный парикмахер с 20-летним опытом работы. За эти годы я освоила различные техники стрижек и окрашивания, постоянно совершенствуя свои навыки на международных семинарах и курсах.</p>
+                    <p>Специализируюсь на корейских и английских стрижках, которые сейчас находятся на пике моды.</p>
+                    <p>Моя философия - индивидуальный подход к каждому клиенту. Я внимательно выслушиваю ваши пожелания и предлагаю решения, которые подчеркнут вашу индивидуальность и будут соответствовать вашему образу жизни.</p>
+                    <div class="experience">
+                        <div class="experience-number">20</div>
+                        <div class="experience-text">лет успешной работы<br>в индустрии красоты</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Мои услуги</h2>
+                <p>Специализированные парикмахерские услуги</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%81%D1%82%D0%B8%D0%B6%D0%BA%D0%B8.jpg" alt="Корейские стрижки">
+                    </div>
+                    <div class="service-content">
+                        <h3>Корейские стрижки</h3>
+                        <p>Современные корейские стрижки с учетом последних трендов азиатской моды. Идеально подходят для создания естественного и стильного образа с акцентом на текстуру и движение волос.</p>
+                        <div class="price">
+                            <span>от 1800 руб.</span>
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/englich.jpg" alt="Английские стрижки">
+                    </div>
+                    <div class="service-content">
+                        <h3>Английские стрижки</h3>
+                        <p>Элегантные и утонченные английские стрижки, которые добавляют образу аристократичности и стиля. Идеальны для создания классического и сдержанного образа.</p>
+                        <div class="price">
+                            <span>от 2000 руб.</span>
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/%D0%BE%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D1%8E%D0%B1%D0%BE%D0%B9%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8.jpg" alt="Окрашивание волос">
+                    </div>
+                    <div class="service-content">
+                        <h3>Окрашивание любой сложности</h3>
+                        <p>Профессиональное окрашивание: от однотонного до сложного колорирования, мелирования, балаяжа и шатуша. Использую только качественные материалы премиум-класса.</p>
+                        <div class="price">
+                            <span>от 3000 руб.</span>
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Почему выбирают меня</h2>
+                <p>Преимущества работы с профессиональным парикмахером</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Качество</h3>
+                    <p>Использую только профессиональные материалы и инструменты премиум-класса</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Каждому клиенту уделяю максимум внимания и подбираю стиль под тип лица и волос</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Опыт</h3>
+                    <p>20 лет практики и постоянное обучение новым техникам и трендам</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Моя локация</h2>
+                <p>Работаю в Смоленске для вашего удобства</p>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card fade-in">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Смоленск</h3>
+                    <p><i class="fas fa-location-dot"></i> ул. Николаева, 3</p>
+                    <p><i class="far fa-clock"></i> Пн-Сб: 9:00 - 18:00</p>
+                    <p><i class="far fa-clock"></i> Вс: 10:00 - 16:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Мои работы</h2>
+                <p>Примеры стрижек и окрашиваний, выполненных мной</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/%D0%BA%D0%BE%D1%80%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%81%D1%82%D1%83%D1%80%D0%BE%D0%B9.jpg" alt="Корейская стрижка">
+                    <div class="gallery-overlay">
+                        <h4>Корейская стрижка</h4>
+                        <p>Многослойная стрижка с текстурированием</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/englichchet.jpg" alt="Английская стрижка">
+                    <div class="gallery-overlay">
+                        <h4>Английская стрижка</h4>
+                        <p>Элегантная стрижка с четкими линиями</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/%D0%BC%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%BC%20%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%D0%BE%D0%BC.jpg" alt="Окрашивание">
+                    <div class="gallery-overlay">
+                        <h4>Окрашивание</h4>
+                        <p>Мелирование с плавными переходами</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://raw.githubusercontent.com/Michae007/Olga-Carre/main/1000065628.jpg" alt="Мастер Olga Carre">
+                    <div class="gallery-overlay">
+                        <h4>Мастер Olga Carre</h4>
+                        <p>Профессиональный парикмахер с 20-летним опытом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Отзывы клиентов</h2>
+                <p>Что говорят мои клиенты о моей работе</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-text">
+                        Ольга - настоящий профессионал! Делала у нее корейскую стрижку, результат превзошел все ожидания. Очень внимательная к деталям и пожеланиям клиента. Рекомендую всем подругам!
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Анна</h4>
+                            <p>Клиентка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-text">
+                        Хожу к Ольге уже больше 5 лет. Всегда доволен стрижкой. Она умеет подобрать идеальный вариант под тип лица и волос. Отличное соотношение цены и качества!
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Дмитрий</h4>
+                            <p>Клиент</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-text">
+                        Делала окрашивание у Ольги - результат просто потрясающий! Она подобрала идеальный оттенок и технику окрашивания. Теперь только к ней!
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Елена</h4>
+                            <p>Клиентка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Часто задаваемые вопросы</h2>
+                <p>Ответы на популярные вопросы о моих услугах</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Как записаться на стрижку или окрашивание?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вы можете записаться, связавшись со мной по телефону +7 950 705 0964, через Telegram @olga_carre или WhatsApp. Я подберу удобное для вас время и проконсультирую по всем вопросам.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Сколько времени занимает стрижка?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В среднем стрижка занимает от 1 до 1.5 часов в зависимости от сложности. Консультация и мытье головы входят в это время.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Нужна ли консультация перед окрашиванием?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, я всегда провожу бесплатную консультацию перед окрашиванием. Мы обсудим желаемый результат, осмотрим состояние ваших волос и подберем оптимальную технику и цвет.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Готовы к преображению?</h2>
+            <p>Запишитесь на консультацию и получите индивидуальные рекомендации по стрижке и уходу за волосами</p>
+            <a href="#contact" class="btn">Записаться сейчас</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Свяжитесь со мной</h2>
+                <p>Запишитесь на стрижку или задайте вопрос</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Контактная информация</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 950 705 0964</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>rasvet360@gmail.com</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Смоленск, ул. Николаева, 3</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/olga_carre" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/79507050964" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://vk.ru/olga_borshchac" target="_blank" aria-label="VK"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="contact-info fade-in">
+                    <h3>Часы работы</h3>
+                    <div class="contact-detail">
+                        <i class="far fa-clock"></i>
+                        <span>Понедельник - Суббота: 9:00 - 18:00</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="far fa-clock"></i>
+                        <span>Воскресенье: 10:00 - 16:00</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Запись по предварительной договоренности</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Olga Carre</h3>
+                    <p>Профессиональный парикмахер с 20-летним опытом работы. Специализируюсь на корейских и английских стрижках, окрашивании любой сложности.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Корейские стрижки</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Английские стрижки</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Окрашивание</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Консультация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><a href="tel:+79507050964"><i class="fas fa-phone"></i> +7 950 705 0964</a></li>
+                        <li><a href="mailto:rasvet360@gmail.com"><i class="fas fa-envelope"></i> rasvet360@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Смоленск, ул. Николаева, 3</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Обо мне</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Галерея работ</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Отзывы</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> Вопросы и ответы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Olga Carre. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu after clicking a link
+                    document.querySelector('nav ul').classList.remove('show');
+                }
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Sticky Header
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Fade in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = function() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', fadeInOnScroll);
+        // Initial check in case elements are already in view
+        fadeInOnScroll();
+    </script>
+</body>
+</html>
