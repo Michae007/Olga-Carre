@@ -3,7 +3,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://ваш-домен.ru/sitemap.xml
+Sitemap: https://olga-carre.ru/sitemap.xml
 
 # Яндекс
 User-agent: Yandex
