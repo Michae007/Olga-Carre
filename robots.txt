@@ -1,15 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-
 Sitemap: https://olga-carre.ru/sitemap.xml
-
-# Яндекс
-User-agent: Yandex
-Allow: /
-Clean-param: utm_source&utm_medium&utm_campaign /
-
-# Google
-User-agent: Googlebot
-Allow: /
