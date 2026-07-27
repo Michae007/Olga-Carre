@@ -31,7 +31,6 @@
   <meta name="robots" content="index, follow">
   <meta name="yandex-verification" content="ВАШ_КОД_ВЕРИФИКАЦИИ"> <!-- замените на реальный код -->
   <meta name="yandex-region" content="Смоленск">
-  <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
   <link rel="canonical" href="https://olga-carre.ru/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -56,7 +55,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
-  <!-- Сжатый CSS (все стили в одном блоке) -->
+  <!-- Сжатый CSS (с исправлениями для изображений) -->
   <style>
     :root{--gold:#d4af37;--dark:#1a1a2e;--light:#f8f9fa;--text:#2d3748;--shadow:0 15px 40px rgba(0,0,0,0.08);--radius:20px}
     *{margin:0;padding:0;box-sizing:border-box}
@@ -87,7 +86,8 @@
     .hero p{font-size:1.3rem;max-width:700px;margin:0 auto 40px;opacity:.9}
     .hero-btns{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}
     .about-content{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-    .about-img img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);transition:.4s}
+    .about-img{width:100%;max-width:500px;margin:0 auto}
+    .about-img img{width:100%;height:auto;max-height:600px;object-fit:contain;border-radius:var(--radius);box-shadow:var(--shadow);transition:.4s;display:block}
     .about-img img:hover{transform:scale(1.02)}
     .about-text h3{font-size:2.2rem;color:var(--dark);margin-bottom:20px}
     .about-text p{margin-bottom:20px;color:#4a5568}
@@ -157,8 +157,25 @@
     .footer-col a:hover{color:var(--gold);padding-left:6px}
     .footer-col a i{color:var(--gold)}
     .copyright{text-align:center;padding-top:30px;border-top:1px solid rgba(255,255,255,0.08);margin-top:30px;opacity:.6}
-    @media (max-width:992px){.about-content{grid-template-columns:1fr}.about-img{max-width:500px;margin:0 auto}}
-    @media (max-width:768px){.hero h1{font-size:2.5rem}.hero{padding:150px 0 80px}.hero-btns{flex-direction:column;align-items:center}nav ul{display:none;position:absolute;top:70px;left:0;width:100%;background:#fff;flex-direction:column;padding:25px;box-shadow:0 15px 30px rgba(0,0,0,0.1);z-index:999}nav ul.show{display:flex}.mobile-menu-btn{display:block}.section-title h2{font-size:2.2rem}section{padding:60px 0}}
+
+    /* Мобильные устройства: изображение не растягивается */
+    @media (max-width: 992px) {
+      .about-content { grid-template-columns: 1fr; }
+      .about-img { max-width: 100%; }
+      .about-img img { max-height: none; object-fit: contain; }
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero { padding: 150px 0 80px; }
+      .hero-btns { flex-direction: column; align-items: center; }
+      nav ul { display: none; position: absolute; top: 70px; left: 0; width: 100%; background: #fff; flex-direction: column; padding: 25px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); z-index: 999; }
+      nav ul.show { display: flex; }
+      .mobile-menu-btn { display: block; }
+      .section-title h2 { font-size: 2.2rem; }
+      section { padding: 60px 0; }
+      .gallery-item { height: 200px; } /* уменьшаем высоту галереи на мобильных */
+      .service-img { height: 180px; }
+    }
     .fade-in{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
     .fade-in.visible{opacity:1;transform:translateY(0)}
   </style>
@@ -243,7 +260,17 @@
       </div>
       <div class="about-content">
         <div class="about-img fade-in">
-          <img src="1000065628.jpg" alt="Парикмахер Ольга Карре" width="500" height="600" loading="lazy" decoding="async">
+          <!-- Адаптивное изображение: для мобильных – 400px, для планшетов – 800px, для десктопа – 1000px -->
+          <img 
+            src="1000065628.jpg" 
+            srcset="1000065628-400.jpg 400w, 1000065628-800.jpg 800w, 1000065628.jpg 1000w"
+            sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1000px"
+            alt="Парикмахер Ольга Карре" 
+            width="500" height="600" 
+            loading="eager" 
+            decoding="async"
+            fetchpriority="high"
+          >
         </div>
         <div class="about-text fade-in">
           <h3>Ольга Карре – ваш мастер в Смоленске</h3>
