@@ -173,9 +173,12 @@
     .footer-col a{color:#ccc;text-decoration:none;transition:.3s;display:flex;align-items:center;gap:6px}
     .footer-col a:hover{color:var(--gold);padding-left:5px}
     .footer-col a i{color:var(--gold)}
-    .footer-col a img{height:1.2rem;width:auto;filter:invert(1);transition:filter .3s}
+    .footer-col a img{height:1.4rem;width:auto;filter:invert(1);transition:filter .3s;display:inline-block}
     .footer-col a:hover img{filter:invert(0)}
+    .footer-col .social-link-text{font-size:0.95rem;vertical-align:middle}
     .copyright{text-align:center;padding-top:25px;border-top:1px solid rgba(255,255,255,0.08);margin-top:25px;opacity:.6;font-size:.9rem}
+
+    /* Адаптивность */
     @media (max-width:992px){.about-content{grid-template-columns:1fr}.about-img{max-width:100%}}
     @media (max-width:768px){
       .hero h1{font-size:2.2rem}
@@ -190,6 +193,15 @@
       .service-img{height:180px}
       .locations-grid{grid-template-columns:1fr}
       .social-platforms-grid{grid-template-columns:1fr}
+      .footer-container{grid-template-columns:1fr 1fr;gap:20px}
+      .footer-col ul li a img{height:1.2rem}
+      .social-links a{width:40px;height:40px}
+      .social-links a img{height:1.5rem}
+    }
+    @media (max-width:480px){
+      .footer-container{grid-template-columns:1fr}
+      .social-links a{width:38px;height:38px}
+      .social-links a img{height:1.3rem}
     }
     .fade-in{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
     .fade-in.visible{opacity:1;transform:translateY(0)}
@@ -545,7 +557,10 @@
           <li><a href="https://wa.me/79507050964" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></li>
           <li><a href="https://vk.com/olga_borshchac" target="_blank"><i class="fab fa-vk" aria-hidden="true"></i> VK</a></li>
           <li><a href="https://youtube.com/@olga_carre?si=IBYJSLFiShWkqfov" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
-          <li><a href="https://rutube.ru/channel/42429315/" target="_blank"><img src="Logo_RUTUBE_dark_color.svg" alt="Rutube" style="height:1.2rem; width:auto; filter:invert(1); transition:filter 0.3s;"></a></li>
+          <li><a href="https://rutube.ru/channel/42429315/" target="_blank" style="gap:4px;">
+            <img src="Logo_RUTUBE_dark_color.svg" alt="Rutube" style="height:1.4rem; width:auto; filter:invert(1); transition:filter 0.3s; display:inline-block;">
+            <span class="social-link-text">Rutube</span>
+          </a></li>
         </ul></div>
       </div>
       <div class="copyright">© 2026 Olga Carre. Все права защищены.</div>
