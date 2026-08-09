@@ -25,8 +25,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Корейские и английские стрижки в Смоленске и Ярцево | Парикмахер Ольга Карре</title>
-  <meta name="description" content="Парикмахер-стилист с 20-летним опытом. Корейские стрижки, английские стрижки, окрашивание любой сложности в Смоленске и Ярцево. Запись онлайн +7 950 705 0964.">
-  <meta name="keywords" content="корейские стрижки, английские стрижки, парикмахер Смоленск, парикмахер Ярцево, женские стрижки, окрашивание волос, запись к парикмахеру">
+  <meta name="description" content="Парикмахер-стилист с 20-летним опытом. Корейские стрижки, английские стрижки, окрашивание любой сложности в Смоленске и Ярцево. Использую премиальную косметику L'Oréal, Wella, Igora. Запись онлайн +7 950 705 0964.">
+  <meta name="keywords" content="корейские стрижки, английские стрижки, парикмахер Смоленск, парикмахер Ярцево, женские стрижки, окрашивание волос, балаяж, шатуш, мелирование, запись к парикмахеру, профессиональный парикмахер">
   <meta name="author" content="Olga Carre">
   <meta name="robots" content="index, follow">
   <meta name="yandex-verification" content="ВАШ_КОД_ВЕРИФИКАЦИИ">
@@ -34,7 +34,7 @@
   <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
   <link rel="canonical" href="https://olga-carre.ru/">
 
-  <!-- ФАВИКОНЫ (НОВЫЙ НАБОР) -->
+  <!-- ФАВИКОНЫ -->
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -46,18 +46,18 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Парикмахер Ольга Карре | Стрижки и окрашивание в Смоленске и Ярцево">
-  <meta property="og:description" content="Корейские и английские стрижки, окрашивание любой сложности. 20 лет опыта.">
+  <meta property="og:description" content="Корейские и английские стрижки, окрашивание любой сложности. 20 лет опыта, премиальная косметика.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://olga-carre.ru/">
   <meta property="og:image" content="https://olga-carre.ru/olga-carre1.webp">
 
-  <!-- Шрифты -->
+  <!-- Шрифты (асинхронно) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 
-  <!-- Иконки -->
+  <!-- Иконки (асинхронно) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
@@ -95,6 +95,8 @@
     .about-img img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);display:block}
     .about-text h3{font-size:2rem;color:var(--dark);margin-bottom:15px}
     .about-text p{margin-bottom:15px;color:#4a5568}
+    .about-text a{color:var(--gold);font-weight:600;text-decoration:none;transition:.3s}
+    .about-text a:hover{text-decoration:underline}
     .experience{display:flex;align-items:center;background:var(--light);padding:20px 25px;border-radius:15px;margin-top:25px;box-shadow:var(--shadow)}
     .experience-number{font-size:3.5rem;font-weight:700;color:var(--gold);margin-right:15px;line-height:1}
     .services{background:var(--light)}
@@ -124,7 +126,7 @@
     .price-row.header{background:var(--dark);color:#fff;font-weight:700}
     .price-row.location{background:var(--light);font-style:italic;color:#6b7280;border-top:2px solid var(--gold)}
     .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-    .gallery-item{height:250px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.4s}
+    .gallery-item{height:250px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.4s;will-change:transform}
     .gallery-item:hover{transform:scale(1.03)}
     .gallery-item img{width:100%;height:100%;object-fit:cover;transition:.4s}
     .gallery-item:hover img{transform:scale(1.08)}
@@ -140,6 +142,8 @@
     .social-card .btn-youtube:hover{background:#cc0000;transform:translateY(-3px)}
     .social-card .btn-rutube{background:#1a1a1e;color:#fff;box-shadow:0 4px 20px rgba(0,0,0,0.2)}
     .social-card .btn-rutube:hover{background:#333;transform:translateY(-3px)}
+    .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);margin-top:20px;box-shadow:var(--shadow)}
+    .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
     .articles{background:var(--light)}
     .articles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
     .article-card{background:#fff;border-radius:var(--radius);padding:25px;box-shadow:var(--shadow);transition:.3s;border-left:4px solid var(--gold)}
@@ -186,7 +190,6 @@
     .footer-col .social-link-text{font-size:0.9rem;vertical-align:middle}
     .copyright{text-align:center;padding-top:25px;border-top:1px solid rgba(255,255,255,0.08);margin-top:25px;opacity:.6;font-size:.9rem}
 
-    /* Адаптивность */
     @media (max-width:992px){.about-content{grid-template-columns:1fr}.about-img{max-width:100%}}
     @media (max-width:768px){
       .hero h1{font-size:2.2rem}
@@ -245,7 +248,14 @@
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Окрашивание (длинные)","price":"4500","priceCurrency":"RUB"}}
       ]
     },
-    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"},
+    "hasVideo":{
+      "@type":"VideoObject",
+      "name":"Современные стрижки в Ярцево",
+      "description":"Постричь может каждый. Лёгкий способ, без лишних движений. Подойдёт для экспресс-парикмахерских.",
+      "thumbnailUrl":"https://olga-carre.ru/olga-carre1.webp",
+      "uploadDate":"2026-08-01"
+    }
   }
   </script>
 </head>
@@ -302,14 +312,18 @@
                 importance="high"
                 decoding="async"
                 loading="eager"
+                srcset="olga-carre1.webp 500w, olga-carre1.webp 800w" 
+                sizes="(max-width: 600px) 400px, (max-width: 1024px) 700px, 500px"
               >
             </picture>
           </div>
           <div class="about-text fade-in">
             <h3>Ольга Карре – ваш мастер в Смоленске и Ярцево</h3>
             <p>Приветствую! Я профессиональный парикмахер с 20-летним стажем. Моя специализация — <strong>корейские многослойные стрижки</strong> и <strong>классические английские стрижки</strong>. Также выполняю окрашивание любой сложности: балаяж, шатуш, airtouch, мелирование.</p>
-            <p>Работаю в двух городах: в центре Смоленска (ул. Николаева, 3) и в Ярцево (ул. Максима Горького, 22а). Создаю образы, которые легко укладывать и которые выглядят стильно каждый день.</p>
-            <p><strong>Почему корейские стрижки?</strong> Они визуально омолаживают, добавляют объём у корней и подходят для тонких волос. <strong>Английские стрижки</strong> – элегантность, чёткие линии, долго держат форму.</p>
+            <p>Постоянно повышаю квалификацию на семинарах ведущих российских и зарубежных стилистов, осваиваю новейшие техники работы с волосами. Использую только профессиональную косметику премиум-класса: <strong>L'Oréal Professionnel, Wella Professionals, Igora Royal</strong> – это гарантирует стойкий цвет и здоровье ваших волос.</p>
+            <p>Работаю в двух городах: в центре Смоленска (<a href="#locations">ул. Николаева, 3</a>) и в Ярцево (<a href="#locations">ул. Максима Горького, 22а</a>). Создаю образы, которые легко укладывать и которые выглядят стильно каждый день. Подхожу к каждому клиенту индивидуально: учитываю структуру волос, форму лица и ваш образ жизни, чтобы результат радовал вас долгое время.</p>
+            <p><strong>Почему корейские стрижки?</strong> Они визуально омолаживают, добавляют объём у корней и подходят для тонких волос. <strong>Английские стрижки</strong> – элегантность, чёткие линии, долго держат форму. А окрашивание в техниках балаяж и шатуш придаёт волосам естественное сияние и глубину.</p>
+            <p>Хотите узнать больше о моих <a href="#services">услугах</a> или посмотреть <a href="#prices">цены</a>? Я всегда рада ответить на ваши вопросы!</p>
             <div class="experience"><div class="experience-number">20</div><div class="experience-text">лет успешной работы<br>1000+ довольных клиентов</div></div>
           </div>
         </div>
@@ -420,7 +434,7 @@
       </div>
     </section>
 
-    <!-- SOCIAL PLATFORMS (YouTube + Rutube) -->
+    <!-- SOCIAL PLATFORMS (YouTube + Rutube + Video Embed) -->
     <section class="social" id="social" aria-labelledby="social-title">
       <div class="container">
         <div class="section-title"><h2 id="social-title">Мои видео-каналы</h2><p>Секреты стрижек и окрашивания</p></div>
@@ -437,6 +451,14 @@
             <p>Полезные видео по женским стрижкам, геометрии и индивидуальному подбору. Смотрите на Rutube!</p>
             <a href="https://rutube.ru/channel/42429315/" target="_blank" class="btn btn-rutube" aria-label="Перейти на Rutube-канал">Перейти на Rutube</a>
           </div>
+        </div>
+        <!-- Встроенное видео с YouTube (пример) -->
+        <div style="margin-top:40px;">
+          <h3 style="text-align:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--dark);margin-bottom:20px;">🎬 Смотрите мои работы</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=olga_carre" title="Видео с YouTube-канала Ольга Карре" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p style="text-align:center;margin-top:15px;color:#6b7280;">Больше видео – в моих соцсетях выше ☝️</p>
         </div>
       </div>
     </section>
