@@ -25,8 +25,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Корейские и английские стрижки в Смоленске и Ярцево | Парикмахер Ольга Карре</title>
-  <meta name="description" content="Парикмахер-стилист с 20-летним опытом. Корейские стрижки, английские стрижки, окрашивание любой сложности в Смоленске и Ярцево. Использую премиальную косметику L'Oréal, Wella, Igora. Запись онлайн +7 950 705 0964.">
-  <meta name="keywords" content="корейские стрижки, английские стрижки, парикмахер Смоленск, парикмахер Ярцево, женские стрижки, окрашивание волос, балаяж, шатуш, мелирование, запись к парикмахеру, профессиональный парикмахер">
+  <meta name="description" content="Парикмахер-стилист с 20-летним опытом. Корейские стрижки, английские стрижки, окрашивание любой сложности в Смоленске и Ярцево. Использую премиальную профессиональную косметику. Запись онлайн +7 950 705 0964.">
+  <meta name="keywords" content="корейские стрижки, английские стрижки, парикмахер Смоленск, парикмахер Ярцево, женские стрижки, окрашивание волос, балаяж, шатуш, мелирование, запись к парикмахеру">
   <meta name="author" content="Olga Carre">
   <meta name="robots" content="index, follow">
   <meta name="yandex-verification" content="ВАШ_КОД_ВЕРИФИКАЦИИ">
@@ -46,7 +46,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Парикмахер Ольга Карре | Стрижки и окрашивание в Смоленске и Ярцево">
-  <meta property="og:description" content="Корейские и английские стрижки, окрашивание любой сложности. 20 лет опыта, премиальная косметика.">
+  <meta property="og:description" content="Корейские и английские стрижки, окрашивание любой сложности. 20 лет опыта, премиальная профессиональная косметика.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://olga-carre.ru/">
   <meta property="og:image" content="https://olga-carre.ru/olga-carre1.webp">
@@ -70,6 +70,7 @@
     section{padding:80px 0}
     .section-title{text-align:center;margin-bottom:50px}
     .section-title h2{font-size:2.5rem;color:var(--dark);margin-bottom:10px}
+    .section-title h2 i{color:var(--gold);margin-right:10px}
     .section-title p{font-size:1rem;color:#6b7280;max-width:600px;margin:0 auto}
     .section-title::after{content:'';display:block;width:70px;height:3px;background:linear-gradient(90deg,var(--gold),#f7ef8a);margin:15px auto 0;border-radius:2px}
     .btn{display:inline-block;background:linear-gradient(135deg,var(--gold),#f7ef8a);color:var(--dark);padding:14px 35px;border-radius:50px;font-weight:600;text-decoration:none;transition:all .3s ease;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(212,175,55,0.3);min-height:50px;display:inline-flex;align-items:center;justify-content:center}
@@ -142,8 +143,17 @@
     .social-card .btn-youtube:hover{background:#cc0000;transform:translateY(-3px)}
     .social-card .btn-rutube{background:#1a1a1e;color:#fff;box-shadow:0 4px 20px rgba(0,0,0,0.2)}
     .social-card .btn-rutube:hover{background:#333;transform:translateY(-3px)}
-    .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);margin-top:20px;box-shadow:var(--shadow)}
-    .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+    .video-showcase{margin-top:40px;background:var(--light);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+    .video-showcase .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:20px}
+    .video-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.4s;cursor:pointer;position:relative}
+    .video-card:hover{transform:translateY(-6px)}
+    .video-card img{width:100%;height:180px;object-fit:cover;display:block}
+    .video-card .play-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;opacity:0;transition:.3s}
+    .video-card:hover .play-overlay{opacity:1}
+    .video-card .play-overlay i{font-size:3rem;color:#fff;text-shadow:0 0 20px rgba(0,0,0,0.5)}
+    .video-card .video-info{padding:15px}
+    .video-card .video-info h4{font-size:1.1rem;color:var(--dark);margin-bottom:5px}
+    .video-card .video-info p{font-size:0.9rem;color:#6b7280}
     .articles{background:var(--light)}
     .articles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
     .article-card{background:#fff;border-radius:var(--radius);padding:25px;box-shadow:var(--shadow);transition:.3s;border-left:4px solid var(--gold)}
@@ -205,6 +215,7 @@
       .service-img{height:180px}
       .locations-grid{grid-template-columns:1fr}
       .social-platforms-grid{grid-template-columns:1fr}
+      .video-showcase .video-grid{grid-template-columns:1fr}
       .footer-container{grid-template-columns:1fr 1fr;gap:20px}
       .social-links a{min-height:48px;padding:8px 14px;font-size:1rem}
       .social-links a img{height:1.8rem}
@@ -248,14 +259,7 @@
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Окрашивание (длинные)","price":"4500","priceCurrency":"RUB"}}
       ]
     },
-    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"},
-    "hasVideo":{
-      "@type":"VideoObject",
-      "name":"Современные стрижки в Ярцево",
-      "description":"Постричь может каждый. Лёгкий способ, без лишних движений. Подойдёт для экспресс-парикмахерских.",
-      "thumbnailUrl":"https://olga-carre.ru/olga-carre1.webp",
-      "uploadDate":"2026-08-01"
-    }
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}
   }
   </script>
 </head>
@@ -298,7 +302,7 @@
     <!-- ABOUT -->
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="container">
-        <div class="section-title"><h2 id="about-title">Обо мне</h2><p>Парикмахер-стилист Ольга Карре</p></div>
+        <div class="section-title"><h2><i class="fas fa-user-circle" aria-hidden="true"></i>Обо мне</h2><p>Парикмахер-стилист Ольга Карре</p></div>
         <div class="about-content">
           <div class="about-img fade-in">
             <picture>
@@ -320,7 +324,7 @@
           <div class="about-text fade-in">
             <h3>Ольга Карре – ваш мастер в Смоленске и Ярцево</h3>
             <p>Приветствую! Я профессиональный парикмахер с 20-летним стажем. Моя специализация — <strong>корейские многослойные стрижки</strong> и <strong>классические английские стрижки</strong>. Также выполняю окрашивание любой сложности: балаяж, шатуш, airtouch, мелирование.</p>
-            <p>Постоянно повышаю квалификацию на семинарах ведущих российских и зарубежных стилистов, осваиваю новейшие техники работы с волосами. Использую только профессиональную косметику премиум-класса: <strong>L'Oréal Professionnel, Wella Professionals, Igora Royal</strong> – это гарантирует стойкий цвет и здоровье ваших волос.</p>
+            <p>Постоянно повышаю квалификацию на семинарах ведущих российских и зарубежных стилистов, осваиваю новейшие техники работы с волосами. Использую только профессиональную косметику премиум-класса – это гарантирует стойкий цвет и здоровье ваших волос.</p>
             <p>Работаю в двух городах: в центре Смоленска (<a href="#locations">ул. Николаева, 3</a>) и в Ярцево (<a href="#locations">ул. Максима Горького, 22а</a>). Создаю образы, которые легко укладывать и которые выглядят стильно каждый день. Подхожу к каждому клиенту индивидуально: учитываю структуру волос, форму лица и ваш образ жизни, чтобы результат радовал вас долгое время.</p>
             <p><strong>Почему корейские стрижки?</strong> Они визуально омолаживают, добавляют объём у корней и подходят для тонких волос. <strong>Английские стрижки</strong> – элегантность, чёткие линии, долго держат форму. А окрашивание в техниках балаяж и шатуш придаёт волосам естественное сияние и глубину.</p>
             <p>Хотите узнать больше о моих <a href="#services">услугах</a> или посмотреть <a href="#prices">цены</a>? Я всегда рада ответить на ваши вопросы!</p>
@@ -333,7 +337,7 @@
     <!-- SERVICES -->
     <section class="services" id="services" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-title"><h2 id="services-title">Мои услуги</h2><p>Стрижки и окрашивание для женщин</p></div>
+        <div class="section-title"><h2><i class="fas fa-cut" aria-hidden="true"></i>Мои услуги</h2><p>Стрижки и окрашивание для женщин</p></div>
         <div class="services-grid">
           <div class="service-card fade-in">
             <div class="service-img"><img src="koreyskie-strizhki.webp" alt="Корейская стрижка" width="400" height="300" loading="lazy" decoding="async"></div>
@@ -357,7 +361,7 @@
             <div class="service-img"><img src="okrashivanie.webp" alt="Окрашивание волос" width="400" height="300" loading="lazy" decoding="async"></div>
             <div class="service-content">
               <h3>Окрашивание любой сложности</h3>
-              <p>Балаяж, шатуш, омбре, колорирование, мелирование. Использую краски L'Oréal, Wella, Igora.</p>
+              <p>Балаяж, шатуш, омбре, колорирование, мелирование. Использую качественные профессиональные краски.</p>
               <div class="price">от 2500 ₽</div>
               <p style="font-size:0.85rem;color:#6b7280;margin-top:5px;">В Ярцево – по договорённости</p>
             </div>
@@ -369,7 +373,7 @@
     <!-- LOCATIONS -->
     <section class="locations" id="locations" aria-labelledby="locations-title">
       <div class="container">
-        <div class="section-title"><h2 id="locations-title">Где я работаю</h2><p>Приезжайте в удобный для вас город</p></div>
+        <div class="section-title"><h2><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Где я работаю</h2><p>Приезжайте в удобный для вас город</p></div>
         <div class="locations-grid">
           <div class="location-card fade-in">
             <i class="fas fa-map-marker-alt" style="font-size:2.5rem;color:var(--gold);margin-bottom:15px;display:block;"></i>
@@ -392,7 +396,7 @@
     <!-- PRICES -->
     <section class="prices" id="prices" aria-labelledby="prices-title">
       <div class="container">
-        <div class="section-title"><h2 id="prices-title">Прайс-лист</h2><p>Актуальные цены (Смоленск)</p></div>
+        <div class="section-title"><h2><i class="fas fa-tag" aria-hidden="true"></i>Прайс-лист</h2><p>Актуальные цены (Смоленск)</p></div>
         <div class="price-table">
           <div class="price-row header"><span>Услуга</span><span>Цена</span></div>
           <div class="price-row"><span>Корейская стрижка (женская)</span><span>1800 ₽</span></div>
@@ -411,7 +415,7 @@
     <!-- BENEFITS -->
     <section class="benefits" id="benefits" aria-labelledby="benefits-title">
       <div class="container">
-        <div class="section-title"><h2 id="benefits-title">Почему выбирают меня</h2><p>Ваши волосы в надёжных руках</p></div>
+        <div class="section-title"><h2><i class="fas fa-star" aria-hidden="true"></i>Почему выбирают меня</h2><p>Ваши волосы в надёжных руках</p></div>
         <div class="benefits-grid">
           <div class="benefit-card fade-in"><div class="benefit-icon"><i class="fas fa-gem" aria-hidden="true"></i></div><h3>Качество</h3><p>Только профессиональная косметика и инструменты.</p></div>
           <div class="benefit-card fade-in"><div class="benefit-icon"><i class="fas fa-user-check" aria-hidden="true"></i></div><h3>Индивидуальный подход</h3><p>Учитываю форму лица, структуру волос и ваш образ жизни.</p></div>
@@ -424,7 +428,7 @@
     <!-- GALLERY -->
     <section class="gallery" id="gallery" aria-labelledby="gallery-title">
       <div class="container">
-        <div class="section-title"><h2 id="gallery-title">Примеры работ</h2><p>До и после</p></div>
+        <div class="section-title"><h2><i class="fas fa-images" aria-hidden="true"></i>Примеры работ</h2><p>До и после</p></div>
         <div class="gallery-grid">
           <div class="gallery-item fade-in"><img src="koreyskaya-tekstura.webp" alt="Корейская стрижка текстура" width="280" height="280" loading="lazy" decoding="async"></div>
           <div class="gallery-item fade-in"><img src="angliyskaya-chetkaya.webp" alt="Английская стрижка четкие линии" width="280" height="280" loading="lazy" decoding="async"></div>
@@ -434,10 +438,10 @@
       </div>
     </section>
 
-    <!-- SOCIAL PLATFORMS (YouTube + Rutube + Video Embed) -->
+    <!-- SOCIAL PLATFORMS + ВИДЕО -->
     <section class="social" id="social" aria-labelledby="social-title">
       <div class="container">
-        <div class="section-title"><h2 id="social-title">Мои видео-каналы</h2><p>Секреты стрижек и окрашивания</p></div>
+        <div class="section-title"><h2><i class="fas fa-share-alt" aria-hidden="true"></i>Мои видео-каналы</h2><p>Секреты стрижек и окрашивания</p></div>
         <div class="social-platforms-grid">
           <div class="social-card fade-in">
             <i class="fab fa-youtube social-icon youtube" aria-hidden="true"></i>
@@ -452,13 +456,29 @@
             <a href="https://rutube.ru/channel/42429315/" target="_blank" class="btn btn-rutube" aria-label="Перейти на Rutube-канал">Перейти на Rutube</a>
           </div>
         </div>
-        <!-- Встроенное видео с YouTube (пример) -->
-        <div style="margin-top:40px;">
-          <h3 style="text-align:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--dark);margin-bottom:20px;">🎬 Смотрите мои работы</h3>
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=olga_carre" title="Видео с YouTube-канала Ольга Карре" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+
+        <!-- Блок "Смотрите мои работы" с видео-обложками -->
+        <div class="video-showcase">
+          <h3 style="text-align:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--dark);margin-bottom:15px;">🎬 Смотрите мои работы</h3>
+          <p style="text-align:center;color:#6b7280;margin-bottom:10px;">Нажмите на видео, чтобы перейти к просмотру</p>
+          <div class="video-grid">
+            <a href="https://youtube.com/@olga_carre?si=IBYJSLFiShWkqfov" target="_blank" class="video-card" style="text-decoration:none;color:inherit;">
+              <img src="olga-carre1.webp" alt="Видео стрижки" loading="lazy">
+              <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+              <div class="video-info">
+                <h4>Современная стрижка в Ярцево</h4>
+                <p>Корейская техника с эффектом объёма</p>
+              </div>
+            </a>
+            <a href="https://youtube.com/@olga_carre?si=IBYJSLFiShWkqfov" target="_blank" class="video-card" style="text-decoration:none;color:inherit;">
+              <img src="koreyskie-strizhki.webp" alt="Видео окрашивания" loading="lazy">
+              <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+              <div class="video-info">
+                <h4>Окрашивание балаяж</h4>
+                <p>Плавный переход цвета – тренд 2026</p>
+              </div>
+            </a>
           </div>
-          <p style="text-align:center;margin-top:15px;color:#6b7280;">Больше видео – в моих соцсетях выше ☝️</p>
         </div>
       </div>
     </section>
@@ -466,7 +486,7 @@
     <!-- ARTICLES -->
     <section class="articles" id="articles" aria-labelledby="articles-title">
       <div class="container">
-        <div class="section-title"><h2 id="articles-title">Полезные статьи</h2><p>Советы и тренды от профессионала</p></div>
+        <div class="section-title"><h2><i class="fas fa-newspaper" aria-hidden="true"></i>Полезные статьи</h2><p>Советы и тренды от профессионала</p></div>
         <div class="articles-grid">
           <div class="article-card fade-in">
             <h3>Почему корейские стрижки так популярны?</h3>
@@ -495,7 +515,7 @@
     <!-- TESTIMONIALS -->
     <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
-        <div class="section-title"><h2 id="testimonials-title">Отзывы клиентов</h2><p>Реальные мнения о моей работе</p></div>
+        <div class="section-title"><h2><i class="fas fa-quote-left" aria-hidden="true"></i>Отзывы клиентов</h2><p>Реальные мнения о моей работе</p></div>
         <div class="testimonials-grid">
           <div class="testimonial-card fade-in"><i class="fas fa-quote-left" aria-hidden="true"></i>«Ольга сделала мне корейскую стрижку – это любовь с первого взгляда! Волосы ожили, появился объём. Очень рекомендую!»<strong>– Анна</strong></div>
           <div class="testimonial-card fade-in"><i class="fas fa-quote-left" aria-hidden="true"></i>«Хожу к Ольге уже 3 года. Английская стрижка держит форму даже после сна. Профессионал с большой буквы.»<strong>– Дмитрий</strong></div>
@@ -507,7 +527,7 @@
     <!-- FAQ -->
     <section class="faq" id="faq" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-title"><h2 id="faq-title">Часто задаваемые вопросы</h2></div>
+        <div class="section-title"><h2><i class="fas fa-question-circle" aria-hidden="true"></i>Часто задаваемые вопросы</h2></div>
         <div class="faq-container">
           <div class="faq-item fade-in">
             <div class="faq-question"><span>Как записаться на стрижку?</span><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
@@ -523,7 +543,7 @@
           </div>
           <div class="faq-item fade-in">
             <div class="faq-question"><span>Какие краски используете?</span><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
-            <div class="faq-answer"><p>L'Oréal Professionnel, Wella Professionals, Igora Royal – премиум-класс, безопасные для волос.</p></div>
+            <div class="faq-answer"><p>Профессиональные краски премиум-класса, безопасные для волос.</p></div>
           </div>
           <div class="faq-item fade-in">
             <div class="faq-question"><span>В Ярцево цены такие же, как в Смоленске?</span><i class="fas fa-chevron-down" aria-hidden="true"></i></div>
@@ -536,7 +556,7 @@
     <!-- CONTACT -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
-        <div class="section-title"><h2 id="contact-title">Контакты</h2><p>Запишитесь на стрижку или задайте вопрос</p></div>
+        <div class="section-title"><h2><i class="fas fa-envelope" aria-hidden="true"></i>Контакты</h2><p>Запишитесь на стрижку или задайте вопрос</p></div>
         <div class="contact-container">
           <div class="fade-in">
             <h3>Свяжитесь со мной</h3>
