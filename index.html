@@ -143,17 +143,6 @@
     .social-card .btn-youtube:hover{background:#cc0000;transform:translateY(-3px)}
     .social-card .btn-rutube{background:#1a1a1e;color:#fff;box-shadow:0 4px 20px rgba(0,0,0,0.2)}
     .social-card .btn-rutube:hover{background:#333;transform:translateY(-3px)}
-    .video-showcase{margin-top:40px;background:var(--light);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
-    .video-showcase .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:20px}
-    .video-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.4s;cursor:pointer;position:relative}
-    .video-card:hover{transform:translateY(-6px)}
-    .video-card img{width:100%;height:180px;object-fit:cover;display:block}
-    .video-card .play-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;opacity:0;transition:.3s}
-    .video-card:hover .play-overlay{opacity:1}
-    .video-card .play-overlay i{font-size:3rem;color:#fff;text-shadow:0 0 20px rgba(0,0,0,0.5)}
-    .video-card .video-info{padding:15px}
-    .video-card .video-info h4{font-size:1.1rem;color:var(--dark);margin-bottom:5px}
-    .video-card .video-info p{font-size:0.9rem;color:#6b7280}
     .articles{background:var(--light)}
     .articles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
     .article-card{background:#fff;border-radius:var(--radius);padding:25px;box-shadow:var(--shadow);transition:.3s;border-left:4px solid var(--gold)}
@@ -200,6 +189,7 @@
     .footer-col .social-link-text{font-size:0.9rem;vertical-align:middle}
     .copyright{text-align:center;padding-top:25px;border-top:1px solid rgba(255,255,255,0.08);margin-top:25px;opacity:.6;font-size:.9rem}
 
+    /* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ===== */
     @media (max-width:992px){.about-content{grid-template-columns:1fr}.about-img{max-width:100%}}
     @media (max-width:768px){
       .hero h1{font-size:2.2rem}
@@ -215,7 +205,6 @@
       .service-img{height:180px}
       .locations-grid{grid-template-columns:1fr}
       .social-platforms-grid{grid-template-columns:1fr}
-      .video-showcase .video-grid{grid-template-columns:1fr}
       .footer-container{grid-template-columns:1fr 1fr;gap:20px}
       .social-links a{min-height:48px;padding:8px 14px;font-size:1rem}
       .social-links a img{height:1.8rem}
@@ -438,7 +427,7 @@
       </div>
     </section>
 
-    <!-- SOCIAL PLATFORMS + ВИДЕО -->
+    <!-- SOCIAL PLATFORMS (только каналы, без видео) -->
     <section class="social" id="social" aria-labelledby="social-title">
       <div class="container">
         <div class="section-title"><h2><i class="fas fa-share-alt" aria-hidden="true"></i>Мои видео-каналы</h2><p>Секреты стрижек и окрашивания</p></div>
@@ -454,30 +443,6 @@
             <h3>Rutube-канал</h3>
             <p>Полезные видео по женским стрижкам, геометрии и индивидуальному подбору. Смотрите на Rutube!</p>
             <a href="https://rutube.ru/channel/42429315/" target="_blank" class="btn btn-rutube" aria-label="Перейти на Rutube-канал">Перейти на Rutube</a>
-          </div>
-        </div>
-
-        <!-- Блок "Смотрите мои работы" с видео-обложками -->
-        <div class="video-showcase">
-          <h3 style="text-align:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--dark);margin-bottom:15px;">🎬 Смотрите мои работы</h3>
-          <p style="text-align:center;color:#6b7280;margin-bottom:10px;">Нажмите на видео, чтобы перейти к просмотру</p>
-          <div class="video-grid">
-            <a href="https://youtube.com/@olga_carre?si=IBYJSLFiShWkqfov" target="_blank" class="video-card" style="text-decoration:none;color:inherit;">
-              <img src="olga-carre1.webp" alt="Видео стрижки" loading="lazy">
-              <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
-              <div class="video-info">
-                <h4>Современная стрижка в Ярцево</h4>
-                <p>Корейская техника с эффектом объёма</p>
-              </div>
-            </a>
-            <a href="https://youtube.com/@olga_carre?si=IBYJSLFiShWkqfov" target="_blank" class="video-card" style="text-decoration:none;color:inherit;">
-              <img src="koreyskie-strizhki.webp" alt="Видео окрашивания" loading="lazy">
-              <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
-              <div class="video-info">
-                <h4>Окрашивание балаяж</h4>
-                <p>Плавный переход цвета – тренд 2026</p>
-              </div>
-            </a>
           </div>
         </div>
       </div>
