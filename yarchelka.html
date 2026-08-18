@@ -32,7 +32,7 @@
   <meta name="yandex-region" content="Ярцево">
   <link rel="canonical" href="https://olga-carre.ru/yarchelka.html">
 
-  <!-- ФАВИКОНЫ (можно позже заменить на детские) -->
+  <!-- ФАВИКОНЫ -->
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -79,8 +79,7 @@
     .btn-dikidi:hover{background:#1d8a4b}
     header{background:rgba(255,255,255,0.95);box-shadow:0 2px 20px rgba(0,0,0,0.05);position:fixed;width:100%;top:0;z-index:1000;backdrop-filter:blur(12px)}
     .header-container{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
-    .logo-text{font-size:2rem;font-weight:700;color:var(--dark);font-family:'Comic Neue',cursive}
-    .logo-text span{color:var(--primary)}
+    .header-logo{height:50px;width:auto;display:block}
     nav ul{display:flex;list-style:none;gap:25px}
     nav ul li a{text-decoration:none;color:var(--dark);font-weight:600;transition:.3s;position:relative;padding:5px 0}
     nav ul li a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:3px;background:var(--primary);transition:.3s;border-radius:10px}
@@ -90,6 +89,7 @@
     .hero{background:linear-gradient(135deg,rgba(255,107,107,0.9),rgba(78,205,196,0.8)),url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1200&q=80') center/cover;color:#fff;padding:180px 0 120px;text-align:center;position:relative;overflow:hidden}
     .hero::before{content:'🎈🎉🧸';position:absolute;top:20px;right:30px;font-size:4rem;opacity:0.3;transform:rotate(10deg)}
     .hero::after{content:'✂️💇';position:absolute;bottom:20px;left:30px;font-size:4rem;opacity:0.3;transform:rotate(-10deg)}
+    .hero-logo{max-width:200px;height:auto;margin:0 auto 20px;display:block}
     .hero h1{font-size:4rem;margin-bottom:15px;text-shadow:0 4px 20px rgba(0,0,0,0.2)}
     .hero p{font-size:1.3rem;max-width:650px;margin:0 auto 30px;opacity:.95;font-weight:500}
     .hero-btns{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
@@ -104,8 +104,6 @@
     .feature:hover{transform:translateY(-6px)}
     .feature i{font-size:2.8rem;color:var(--primary);margin-bottom:10px;display:block}
     .feature h4{font-size:1.2rem;color:var(--dark)}
-    .logo-block{background:#fff;padding:30px 0;text-align:center;margin:0 15px;border-radius:var(--radius);box-shadow:var(--shadow)}
-    .logo-block img{max-width:250px;height:auto}
     .location-info{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);text-align:center;margin:0 auto;max-width:800px}
     .location-info h3{font-size:1.8rem;color:var(--dark);margin-bottom:10px}
     .location-info p{margin-bottom:8px;color:#4a5568}
@@ -137,6 +135,7 @@
     .footer-col a:hover{color:var(--secondary);padding-left:5px}
     .footer-col a i{color:var(--secondary)}
     .copyright{text-align:center;padding-top:25px;border-top:1px solid rgba(255,255,255,0.08);margin-top:25px;opacity:.7;font-size:.9rem}
+
     @media (max-width:992px){.about-content{grid-template-columns:1fr}.about-img{max-width:100%}}
     @media (max-width:768px){
       .hero h1{font-size:2.8rem}
@@ -152,6 +151,8 @@
       .hero::before,.hero::after{font-size:2.5rem}
       .gallery-grid{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
       .gallery-item{height:150px}
+      .header-logo{height:40px}
+      .hero-logo{max-width:150px}
     }
     .fade-in{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
     .fade-in.visible{opacity:1;transform:translateY(0)}
@@ -160,13 +161,13 @@
 <body>
   <header id="header" role="banner">
     <div class="container header-container">
-      <div class="logo-text" aria-label="ЯрЧёлка логотип">Яр<span>Чёлка</span></div>
+      <!-- ЛОГОТИП В ШАПКЕ -->
+      <img src="logo.webp" alt="ЯрЧёлка" class="header-logo">
       <nav role="navigation" aria-label="Главное меню">
         <button class="mobile-menu-btn" aria-label="Открыть меню"><i class="fas fa-bars" aria-hidden="true"></i></button>
         <ul>
           <li><a href="#home">Главная</a></li>
           <li><a href="#about">О нас</a></li>
-          <li><a href="#logo-block">Логотип</a></li>
           <li><a href="#gallery">Фото</a></li>
           <li><a href="#booking">Запись</a></li>
           <li><a href="#contact">Контакты</a></li>
@@ -177,9 +178,10 @@
   </header>
 
   <main role="main" id="main-content">
-    <!-- HERO -->
+    <!-- HERO с логотипом -->
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="container">
+        <img src="logo.webp" alt="ЯрЧёлка" class="hero-logo">
         <h1 id="hero-title">Детская парикмахерская «ЯрЧёлка» в Ярцево</h1>
         <p>Профессиональные стрижки для детей в уютной, весёлой атмосфере. Бережный подход, безопасные инструменты, опытные мастера.</p>
         <div class="hero-btns">
@@ -195,7 +197,6 @@
         <div class="section-title"><h2><i class="fas fa-child" aria-hidden="true"></i>О нас</h2><p>Детская парикмахерская «ЯрЧёлка» — забота о ваших детях</p></div>
         <div class="about-content">
           <div class="about-img fade-in">
-            <!-- Фото салона (a.webp) -->
             <img src="a.webp" alt="Детская парикмахерская ЯрЧёлка" width="500" height="600" loading="lazy" decoding="async">
           </div>
           <div class="about-text fade-in">
@@ -212,15 +213,7 @@
       </div>
     </section>
 
-    <!-- ЛОГОТИП -->
-    <section class="logo-block" id="logo-block">
-      <div class="container">
-        <h2 style="font-family:'Comic Neue',cursive;color:var(--primary);margin-bottom:15px;">Наш логотип</h2>
-        <img src="logo.webp" alt="Логотип детской парикмахерской ЯрЧёлка" loading="lazy" decoding="async">
-      </div>
-    </section>
-
-    <!-- ГАЛЕРЕЯ (новые фото b,c,d,e,h,j) -->
+    <!-- ГАЛЕРЕЯ (все новые фото) -->
     <section class="gallery" id="gallery" style="background:var(--light);padding:60px 0;">
       <div class="container">
         <div class="section-title"><h2><i class="fas fa-images" aria-hidden="true"></i>Наши работы и салон</h2><p>Атмосфера, стрижки и уют</p></div>
