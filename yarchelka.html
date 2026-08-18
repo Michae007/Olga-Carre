@@ -64,7 +64,8 @@
       --radius: 25px;
     }
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Montserrat',sans-serif;line-height:1.7;color:var(--text);background:var(--light);overflow-x:hidden}
+    html, body{overflow-x:hidden;width:100%}
+    body{font-family:'Montserrat',sans-serif;line-height:1.7;color:var(--text);background:var(--light)}
     h1,h2,h3,h4{font-family:'Comic Neue',cursive;font-weight:700}
     .container{width:90%;max-width:1200px;margin:0 auto;padding:0 15px}
     section{padding:80px 0}
@@ -78,14 +79,14 @@
     .btn-dikidi{background:linear-gradient(135deg,#25a55b,#2ecc71);box-shadow:0 4px 20px rgba(37,165,91,0.4)}
     .btn-dikidi:hover{background:#1d8a4b}
     header{background:rgba(255,255,255,0.95);box-shadow:0 2px 20px rgba(0,0,0,0.05);position:fixed;width:100%;top:0;z-index:1000;backdrop-filter:blur(12px)}
-    .header-container{display:flex;justify-content:space-between;align-items:center;padding:12px 0;flex-wrap:wrap}
-    .header-logo{height:50px;width:auto;display:block}
+    .header-container{display:flex;justify-content:space-between;align-items:center;padding:12px 0;flex-wrap:nowrap;width:100%}
+    .header-logo{height:50px;width:auto;display:block;max-width:100%}
+    .mobile-menu-btn{display:none;font-size:1.6rem;background:0 0;border:none;cursor:pointer;color:var(--dark);padding:8px 12px;flex-shrink:0}
     nav ul{display:flex;list-style:none;gap:25px}
     nav ul li a{text-decoration:none;color:var(--dark);font-weight:600;transition:.3s;position:relative;padding:5px 0}
     nav ul li a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:3px;background:var(--primary);transition:.3s;border-radius:10px}
     nav ul li a:hover{color:var(--primary)}
     nav ul li a:hover::after{width:100%}
-    .mobile-menu-btn{display:none;font-size:1.6rem;background:0 0;border:none;cursor:pointer;color:var(--dark);padding:8px 12px}
     .hero{background:linear-gradient(135deg,rgba(255,107,107,0.9),rgba(78,205,196,0.8)),url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1200&q=80') center/cover;color:#fff;padding:180px 0 120px;text-align:center;position:relative;overflow:hidden}
     .hero::before{content:'🎈🎉🧸';position:absolute;top:20px;right:30px;font-size:4rem;opacity:0.3;transform:rotate(10deg)}
     .hero::after{content:'✂️💇';position:absolute;bottom:20px;left:30px;font-size:4rem;opacity:0.3;transform:rotate(-10deg)}
@@ -139,14 +140,15 @@
     @media (max-width:992px){.about-content{grid-template-columns:1fr}.about-img{max-width:100%}}
     @media (max-width:768px){
       .header-container{flex-wrap:nowrap}
-      .header-logo{height:40px}
+      .header-logo{height:40px;max-width:70%}
+      .mobile-menu-btn{display:block;padding:10px 12px;font-size:1.8rem}
+      nav ul{display:none;position:absolute;top:60px;left:0;width:100%;background:#fff;flex-direction:column;padding:15px 20px;box-shadow:0 10px 20px rgba(0,0,0,0.1);z-index:999}
+      nav ul.show{display:flex}
+      nav ul li{margin:5px 0}
       .hero h1{font-size:2.8rem}
       .hero{padding:150px 0 80px}
       .hero-btns{flex-direction:column;align-items:center}
       .hero-logo{max-width:150px}
-      nav ul{display:none;position:absolute;top:65px;left:0;width:100%;background:#fff;flex-direction:column;padding:20px;box-shadow:0 15px 30px rgba(0,0,0,0.1);z-index:999}
-      nav ul.show{display:flex}
-      .mobile-menu-btn{display:block}
       .section-title h2{font-size:2.2rem}
       section{padding:50px 0}
       .booking-widget{padding:25px 15px}
@@ -213,7 +215,7 @@
       </div>
     </section>
 
-    <!-- ГАЛЕРЕЯ (все новые фото) -->
+    <!-- ГАЛЕРЕЯ -->
     <section class="gallery" id="gallery" style="background:var(--light);padding:60px 0;">
       <div class="container">
         <div class="section-title"><h2><i class="fas fa-images" aria-hidden="true"></i>Наши работы и салон</h2><p>Атмосфера, стрижки и уют</p></div>
@@ -232,7 +234,7 @@
       </div>
     </section>
 
-    <!-- АДРЕС И КАРТА -->
+    <!-- АДРЕС, КАРТА И ССЫЛКА НА КАРТОЧКУ -->
     <section class="location" id="location" style="background:#fff;">
       <div class="container">
         <div class="section-title"><h2><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Как нас найти</h2><p>Мы работаем в центре Ярцево</p></div>
@@ -244,7 +246,15 @@
           <div class="map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1&source=constructor" width="100%" height="300" frameborder="0" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p style="margin-top:15px;">Также нас можно найти на <a href="https://vk.ru/yarchelka" target="_blank" style="color:var(--primary);font-weight:600;">ВКонтакте</a></p>
+          <!-- ССЫЛКА НА КАРТОЧКУ В ЯНДЕКС.КАРТАХ -->
+          <p style="margin-top:15px;">
+            <a href="https://yandex.ru/maps/org/yarchyolka/162160421192/" target="_blank" style="color:var(--primary);font-weight:600;font-size:1.1rem;">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i> Посмотреть нашу карточку в Яндекс.Картах
+            </a>
+            <br>
+            <span style="font-size:0.9rem;color:#6b7280;">(Нажмите, чтобы перейти к отзывам, фото и подробной информации)</span>
+          </p>
+          <p style="margin-top:10px;">Также нас можно найти на <a href="https://vk.ru/yarchelka" target="_blank" style="color:var(--primary);font-weight:600;">ВКонтакте</a></p>
         </div>
       </div>
     </section>
@@ -298,6 +308,7 @@
         <div class="footer-col"><h3>Контакты</h3><ul><li><a href="tel:+79507050964"><i class="fas fa-phone"></i> +7 950 705 0964</a></li><li><a href="mailto:rasvet360@gmail.com"><i class="fas fa-envelope"></i> rasvet360@gmail.com</a></li></ul></div>
         <div class="footer-col"><h3>Мы в соцсетях</h3><ul><li><a href="https://vk.ru/yarchelka" target="_blank"><i class="fab fa-vk"></i> ВКонтакте</a></li></ul></div>
         <div class="footer-col"><h3>Наш мастер</h3><ul><li><a href="index.html">Ольга Карре – взрослые стрижки</a></li></ul></div>
+        <div class="footer-col"><h3>Яндекс.Бизнес</h3><ul><li><a href="https://yandex.ru/maps/org/yarchyolka/162160421192/" target="_blank"><i class="fas fa-star" style="color:var(--primary);"></i> Наша карточка в Яндекс.Картах</a></li></ul></div>
       </div>
       <div class="copyright">© 2026 ЯрЧёлка. Все права защищены.</div>
     </div>
